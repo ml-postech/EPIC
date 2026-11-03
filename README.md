@@ -5,6 +5,8 @@
 
 Official implementation of the NeurIPS 2027 paper **[EPIC: Efficient Predicate-Guided Inference-Time Control for Compositional Text-to-Image Generation](https://arxiv.org/abs/2605.11722)**.
 
+**Project page:** [https://mtablo.github.io/EPIC_page/](https://mtablo.github.io/EPIC_page/)
+
 EPIC is a training-free inference-time refinement framework for compositional text-to-image generation. It verifies generated images against a fixed visual program and uses the results to guide editing and resampling.
 
 ## 1. Install the image-generation environment
