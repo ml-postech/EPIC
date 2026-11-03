@@ -1,0 +1,45 @@
+[project]
+name = "epic-t2i"
+version = "0.1.0"
+description = "Visual-program verification and iterative refinement for text-to-image generation"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "accelerate==1.9.0",
+    "decord==0.6.0",
+    "diffusers @ git+https://github.com/huggingface/diffusers.git@431066e96762442aad5b675893a91bb8c5bfb3b9",
+    "einops==0.8.1",
+    "huggingface-hub==0.36.2",
+    "langchain-core==0.3.84",
+    "langchain-openai==0.3.23",
+    "langgraph==0.6.6",
+    "numpy==1.26.4",
+    "openai==1.109.1",
+    "opencv-python-headless==4.11.0.86",
+    "Pillow==11.3.0",
+    "protobuf==5.29.3",
+    "pycocotools==2.0.11",
+    "pydantic==2.11.10",
+    "safetensors==0.7.0",
+    "sam3 @ git+https://github.com/facebookresearch/sam3.git@2ec3c0711a9719ac324388adc662e471f8fe2168",
+    "sentencepiece==0.2.0",
+    "setuptools==75.8.2",
+    "timm==1.0.20",
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+    "tqdm==4.67.3",
+    "transformers==4.57.6",
+    "typing-extensions==4.15.0",
+]
+
+[build-system]
+requires = ["setuptools==75.8.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["graph"]
+package-dir = {graph = "src/graph"}
+
+[tool.setuptools.package-data]
+graph = ["prompt_templates/*.txt", "py.typed"]

@@ -1,0 +1,63 @@
+# Python and build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+build/
+dist/
+
+# Test, lint, and notebook caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# Local Python environments
+.venv/
+venv/
+env/
+ENV/
+__pypackages__/
+
+# Credentials and editor settings
+.env
+.env.*
+!.env.example
+!.env.template
+.pypirc
+.vscode/
+.idea/
+*.log
+.DS_Store
+
+# Model weights (also exclude weights saved outside model directories)
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.onnx
+pytorch_model*.bin
+diffusion_pytorch_model*.bin
+
+# Downloaded models, benchmark checkouts, and generated results
+/checkpoints/
+/models/
+/hf_cache/
+/hf_home/
+/torch_cache/
+/outputs/
+/logs/
+/tmp/
+/third_party/
+/GenEval2/
+/UniGenBench/
+/geneval/
+/benchmarks/T2I-CompBench/
+/benchmarks/genai_bench/
+/benchmarks/t2i_compbench/

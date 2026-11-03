@@ -1,0 +1,11 @@
+# Curated Python 3.11 research environment; no machine-specific prefix.
+# Run: conda env create -f epic_env.yml
+# The pip requirements path is relative to this file.
+name: epic_env
+channels:
+  - defaults
+dependencies:
+  - python=3.11.13
+  - pip>=24
+  - pip:
+      - -r requirements.txt

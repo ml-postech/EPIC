@@ -1,0 +1,12 @@
+# Optional, separate environment for the Qwen3-VL server.
+# Its PyTorch version differs from the EPIC image-generation environment.
+# The vLLM 0.23.0 Linux wheel uses PyTorch 2.11.0 / CUDA 13.0.
+name: epic_vlm
+channels:
+  - defaults
+dependencies:
+  - python=3.12.11
+  - pip>=24
+  - pip:
+      - vllm==0.23.0
+      - transformers==4.57.6
